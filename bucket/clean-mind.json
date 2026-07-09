@@ -1,0 +1,36 @@
+{
+    "version": "1.1.0",
+    "description": "Disk usage analyzer that understands developer bloat",
+    "homepage": "https://github.com/MS-Teja/clean-mind",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/MS-Teja/clean-mind/releases/download/v1.1.0/CleanMind-1.1.0-windows-x64.zip",
+            "hash": "560ef81008734795f060a9695478d5f867b2732780a42a0224a5017994d03539"
+        },
+        "arm64": {
+            "url": "https://github.com/MS-Teja/clean-mind/releases/download/v1.1.0/CleanMind-1.1.0-windows-arm64.zip",
+            "hash": "2b66086f91167ef418d7164e68242013f0061d0da29b94837c77b22ac4c50f16"
+        }
+    },
+    "bin": "clean_mind.exe",
+    "shortcuts": [
+        [
+            "clean_mind.exe",
+            "Clean Mind"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/MS-Teja/clean-mind"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/MS-Teja/clean-mind/releases/download/v$version/CleanMind-$version-windows-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/MS-Teja/clean-mind/releases/download/v$version/CleanMind-$version-windows-arm64.zip"
+            }
+        }
+    }
+}
